@@ -1,0 +1,11 @@
+syntax = "proto3";
+package curso.rps;
+
+option go_package = "curso/x/rps/types";
+
+message Item {
+  
+  string name = 1; 
+  string description = 2; 
+  string creator = 3;
+}

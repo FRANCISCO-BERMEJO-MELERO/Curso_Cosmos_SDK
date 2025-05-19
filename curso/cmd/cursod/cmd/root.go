@@ -1,10 +1,9 @@
 package cmd
 
 import (
+	"fmt"
 	"os"
 	"strings"
-	"fmt"
-
 
 	"cosmossdk.io/client/v2/autocli"
 	"cosmossdk.io/depinject"
@@ -47,9 +46,8 @@ func NewRootCmd() *cobra.Command {
 		&clientCtx,
 	); err != nil {
 		fmt.Fprintf(os.Stderr, "⚠️  Error en la inyección de dependencias: %v\n", err)
-        os.Exit(1)
+		os.Exit(1)
 	}
-	
 
 	rootCmd := &cobra.Command{
 		Use:           app.Name + "d",
