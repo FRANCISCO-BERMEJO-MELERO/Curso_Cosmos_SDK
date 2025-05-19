@@ -6,3 +6,15 @@
 22:58:34.293183 db@open done T·2.172077ms
 22:58:37.574103 db@close closing
 22:58:37.574189 db@close done T·84.14µs
+=============== May 19, 2025 (CEST) ===============
+07:47:16.994303 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+07:47:16.994672 version@stat F·[] S·0B[] Sc·[]
+07:47:16.994749 db@open opening
+07:47:16.994816 journal@recovery F·1
+07:47:16.994917 journal@recovery recovering @1
+07:47:16.999941 memdb@flush created L0@2 N·18 S·1KiB "BH:..748,v3":"blo..ore,v6"
+07:47:17.000347 version@stat F·[1] S·1KiB[1KiB] Sc·[0.25]
+07:47:17.084515 db@janitor F·3 G·0
+07:47:17.084594 db@open done T·89.827778ms
+07:47:32.530499 db@close closing
+07:47:32.530590 db@close done T·89.91µs
