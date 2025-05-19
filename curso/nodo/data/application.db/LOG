@@ -1,0 +1,18 @@
+=============== May 18, 2025 (CEST) ===============
+22:58:34.216306 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+22:58:34.224188 db@open opening
+22:58:34.224944 version@stat F·[] S·0B[] Sc·[]
+22:58:34.227330 db@janitor F·2 G·0
+22:58:34.227358 db@open done T·3.146635ms
+22:58:37.574377 db@close closing
+22:58:37.574416 db@close done T·38.393µs
+=============== May 18, 2025 (CEST) ===============
+22:58:37.645191 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+22:58:37.645308 version@stat F·[] S·0B[] Sc·[]
+22:58:37.645333 db@open opening
+22:58:37.645366 journal@recovery F·1
+22:58:37.645750 journal@recovery recovering @1
+22:58:37.651483 memdb@flush created L0@2 N·289 S·11KiB "s/1,v201":"s/latest,v202"
+22:58:37.651656 version@stat F·[1] S·11KiB[11KiB] Sc·[0.25]
+22:58:37.660740 db@janitor F·3 G·0
+22:58:37.660754 db@open done T·15.413958ms

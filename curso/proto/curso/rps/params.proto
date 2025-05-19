@@ -1,0 +1,15 @@
+syntax = "proto3";
+package curso.rps;
+
+import "amino/amino.proto";
+import "gogoproto/gogo.proto";
+
+option go_package = "curso/x/rps/types";
+
+// Params defines the parameters for the module.
+message Params {
+  option (amino.name) = "curso/x/rps/Params";
+  option (gogoproto.equal) = true;
+
+  
+}

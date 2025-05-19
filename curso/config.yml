@@ -1,0 +1,52 @@
+version: 1
+validation: sovereign
+accounts: 
+- name: alice
+  coins:
+  - 20000token
+  - 200000000dez
+- name: bob
+  coins:
+  - 10000token
+  - 100000000dez
+client:
+  openapi:
+    path: docs/static/openapi.yml
+faucet:
+  name: bob
+  coins:
+  - 5token
+  - 100000dez
+validators:
+- name: alice
+  bonded: 100000000dez
+- name: validator1
+  bonded: 100000000dez
+- name: validator2
+  bonded: 200000000dez
+- name: validator3
+  bonded: 300000000dez
+
+staking:
+  bond_denom: dez
+
+genesis:
+  app_state:
+    staking:
+      params:
+        bond_denom: dez
+    bank:
+      denom_metadata:
+      - base: dez
+        display: DEZ
+        name: DEZ Token
+        symbol: DEZ
+        denom_units:
+        - denom: dez
+          exponent: 0
+        - denom: DEZ
+          exponent: 6
+      send_enabled:
+        - denom: dez
+          enabled: true
+        

@@ -1,0 +1,17 @@
+syntax = "proto3";
+package curso.rps;
+
+import "amino/amino.proto";
+import "gogoproto/gogo.proto";
+import "curso/rps/params.proto";
+
+option go_package = "curso/x/rps/types";
+
+// GenesisState defines the rps module's genesis state.
+message GenesisState {
+  // params defines all the parameters of the module.
+  Params params = 1 [
+    (gogoproto.nullable) = false,
+    (amino.dont_omitempty) = true
+  ];
+}
