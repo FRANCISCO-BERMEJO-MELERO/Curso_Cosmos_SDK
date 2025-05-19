@@ -40,10 +40,9 @@ import (
 	_ "github.com/cosmos/cosmos-sdk/x/staking" // import for side-effects
 	stakingkeeper "github.com/cosmos/cosmos-sdk/x/staking/keeper"
 
-
-
-
+	mimodulomodulekeeper "curso/x/mimodulo/keeper"
 	rpsmodulekeeper "curso/x/rps/keeper"
+
 	// this line is used by starport scaffolding # stargate/app/moduleImport
 
 	"curso/docs"
@@ -87,7 +86,8 @@ type App struct {
 	GovKeeper             *govkeeper.Keeper
 	UpgradeKeeper         *upgradekeeper.Keeper
 
-	RpsKeeper rpsmodulekeeper.Keeper
+	RpsKeeper      rpsmodulekeeper.Keeper
+	MimoduloKeeper mimodulomodulekeeper.Keeper
 	// this line is used by starport scaffolding # stargate/app/keeperDeclaration
 
 	// simulation manager
@@ -175,6 +175,7 @@ func New(
 		&app.RpsKeeper,
 		&app.GovKeeper,
 		&app.UpgradeKeeper,
+		&app.MimoduloKeeper,
 		// this line is used by starport scaffolding # stargate/app/keeperDefinition
 	); err != nil {
 		panic(err)
@@ -188,8 +189,6 @@ func New(
 	app.App = appBuilder.Build(db, traceStore, baseAppOptions...)
 
 	app.RegisterUpgradeHandlers()
-
-
 
 	// register streaming services
 	if err := app.RegisterStreamingServices(appOpts, app.kvStoreKeys()); err != nil {
@@ -210,7 +209,6 @@ func New(
 	// 	app.UpgradeKeeper.SetModuleVersionMap(ctx, app.ModuleManager.GetVersionMap())
 	// 	return app.App.InitChainer(ctx, req)
 	// })
-	
 
 	if err := app.Load(loadLatest); err != nil {
 		return nil, err

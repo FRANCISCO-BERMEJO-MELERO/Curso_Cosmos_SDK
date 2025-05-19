@@ -4,13 +4,13 @@
             "@type": "/cosmos.upgrade.v1beta1.MsgSoftwareUpgrade",
             "authority": "cosmos10d07y265gmmuvt4z0w9aw880jnsr700j6zn9kn",
             "plan": {
-                "name": "v2",
-                "height": "800",
+                "name": "v3",
+                "height": "2600",
                 "info": ""
             }
         }
     ],
-    "deposit": "10000dez",
-    "title": "Upgrade a v2",
+    "deposit": "1001dez",
+    "title": "Upgrade a v3",
     "summary": "Añadir un nuevo tipo a item"
 }

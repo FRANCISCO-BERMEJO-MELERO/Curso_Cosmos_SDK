@@ -1,0 +1,17 @@
+syntax = "proto3";
+package curso.mimodulo;
+
+import "amino/amino.proto";
+import "gogoproto/gogo.proto";
+import "curso/mimodulo/params.proto";
+
+option go_package = "curso/x/mimodulo/types";
+
+// GenesisState defines the mimodulo module's genesis state.
+message GenesisState {
+  // params defines all the parameters of the module.
+  Params params = 1 [
+    (gogoproto.nullable) = false,
+    (amino.dont_omitempty) = true
+  ];
+}

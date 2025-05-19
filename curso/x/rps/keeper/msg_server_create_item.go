@@ -20,7 +20,6 @@ func (k msgServer) CreateItem(goCtx context.Context, msg *types.MsgCreateItem) (
 		return nil, err
 	}
 	_ = id
-	
 
 	return &types.MsgCreateItemResponse{}, nil
 }

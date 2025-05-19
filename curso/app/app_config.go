@@ -28,6 +28,10 @@ import (
 	minttypes "github.com/cosmos/cosmos-sdk/x/mint/types"
 	stakingtypes "github.com/cosmos/cosmos-sdk/x/staking/types"
 
+	mimodulomodulev1 "curso/api/curso/mimodulo/module"
+	_ "curso/x/mimodulo/module" // import for side-effects
+	mimodulomoduletypes "curso/x/mimodulo/types"
+
 	_ "cosmossdk.io/x/upgrade" // import for side-effects
 	// this line is used by starport scaffolding # stargate/app/moduleImport
 )
@@ -52,6 +56,7 @@ var (
 		upgradetypes.ModuleName,
 		govtypes.ModuleName,
 
+		mimodulomoduletypes.ModuleName,
 		// this line is used by starport scaffolding # stargate/app/initGenesis
 	}
 
@@ -65,6 +70,7 @@ var (
 		stakingtypes.ModuleName,
 		// chain modules
 		rpsmoduletypes.ModuleName,
+		mimodulomoduletypes.ModuleName,
 		// this line is used by starport scaffolding # stargate/app/beginBlockers
 	}
 
@@ -75,6 +81,7 @@ var (
 		rpsmoduletypes.ModuleName,
 		govtypes.ModuleName,
 
+		mimodulomoduletypes.ModuleName,
 		// this line is used by starport scaffolding # stargate/app/endBlockers
 	}
 
@@ -180,6 +187,10 @@ var (
 			{
 				Name:   govtypes.ModuleName,
 				Config: appconfig.WrapAny(&govmodulev1.Module{}),
+			},
+			{
+				Name:   mimodulomoduletypes.ModuleName,
+				Config: appconfig.WrapAny(&mimodulomodulev1.Module{}),
 			},
 			// this line is used by starport scaffolding # stargate/app/moduleConfig
 		},

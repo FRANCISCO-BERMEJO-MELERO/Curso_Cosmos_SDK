@@ -1,14 +1,13 @@
 package keeper
 
 import (
-	"encoding/binary"
 	"curso/x/rps/types"
+	"encoding/binary"
 
 	"cosmossdk.io/store/prefix"
 	"github.com/cosmos/cosmos-sdk/runtime"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 )
-
 
 func GetItemIDBytes(id uint64) []byte {
 	bz := make([]byte, 8)

@@ -50,3 +50,58 @@
 12:21:26.809951 db@open done T·56.009643ms
 12:31:12.684700 db@close closing
 12:31:12.684829 db@close done T·127.899µs
+=============== May 19, 2025 (CEST) ===============
+13:57:49.923645 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+13:57:49.925091 version@stat F·[2] S·816KiB[816KiB] Sc·[0.50]
+13:57:49.925121 db@open opening
+13:57:49.925151 journal@recovery F·1
+13:57:49.925211 journal@recovery recovering @10
+13:57:49.933813 memdb@flush created L0@12 N·3162 S·487KiB "BH:..30a,v7985":"blo..ore,v5252"
+13:57:49.933894 version@stat F·[3] S·1MiB[1MiB] Sc·[0.75]
+13:57:49.957204 db@janitor F·5 G·0
+13:57:49.957236 db@open done T·32.109265ms
+14:14:56.477949 db@close closing
+14:14:56.478045 db@close done T·95.909µs
+=============== May 19, 2025 (CEST) ===============
+14:15:08.524247 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+14:15:08.524373 version@stat F·[3] S·1MiB[1MiB] Sc·[0.75]
+14:15:08.524405 db@open opening
+14:15:08.524439 journal@recovery F·1
+14:15:08.524506 journal@recovery recovering @13
+14:15:08.546896 memdb@flush created L0@15 N·5496 S·850KiB "BH:..75d,v9054":"blo..ore,v8415"
+14:15:08.547114 version@stat F·[4] S·2MiB[2MiB] Sc·[1.00]
+14:15:08.582319 db@janitor F·6 G·0
+14:15:08.582361 db@open done T·57.948489ms
+14:15:08.582476 table@compaction L0·4 -> L1·0 S·2MiB Q·13906
+14:15:08.612923 table@build created L1@18 N·11058 S·2MiB "BH:..75d,v9054":"SC:52,v215"
+14:15:08.619663 table@build created L1@19 N·528 S·86KiB "SC:520,v3023":"blo..ore,v13905"
+14:15:08.619713 version@stat F·[0 2] S·2MiB[0B 2MiB] Sc·[0.00 0.02]
+14:15:08.626620 table@compaction committed F-2 S-2KiB Ke·0 D·2316 T·44.101654ms
+14:15:08.629557 table@remove removed @12
+14:15:08.629686 table@remove removed @9
+14:15:08.632165 table@remove removed @6
+14:19:41.018554 db@close closing
+14:19:41.018687 db@close done T·131.821µs
+=============== May 19, 2025 (CEST) ===============
+14:20:16.964465 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+14:20:16.964592 version@stat F·[0 2] S·2MiB[0B 2MiB] Sc·[0.00 0.02]
+14:20:16.964632 db@open opening
+14:20:16.964664 journal@recovery F·1
+14:20:16.964745 journal@recovery recovering @16
+14:20:16.971636 memdb@flush created L0@20 N·1440 S·224KiB "BH:..f18,v14893":"blo..ore,v13912"
+14:20:16.971772 version@stat F·[1 2] S·2MiB[224KiB 2MiB] Sc·[0.25 0.02]
+14:20:17.009115 db@janitor F·6 G·1
+14:20:17.009128 db@janitor removing table-15
+14:20:17.009296 db@open done T·44.657849ms
+=============== May 19, 2025 (CEST) ===============
+14:20:48.118766 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+14:20:48.118878 version@stat F·[1 2] S·2MiB[224KiB 2MiB] Sc·[0.25 0.02]
+14:20:48.118918 db@open opening
+14:20:48.118948 journal@recovery F·1
+14:20:48.119706 journal@recovery recovering @21
+14:20:48.123561 memdb@flush created L0@23 N·162 S·25KiB "BH:..5d3,v15458":"blo..ore,v15353"
+14:20:48.123753 version@stat F·[2 2] S·2MiB[249KiB 2MiB] Sc·[0.50 0.02]
+14:20:48.191381 db@janitor F·6 G·0
+14:20:48.191424 db@open done T·72.498305ms
+14:24:08.619811 db@close closing
+14:24:08.619941 db@close done T·128.59µs
